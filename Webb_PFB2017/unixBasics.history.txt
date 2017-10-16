@@ -1,0 +1,74 @@
+   63  curl -O "https://raw.githubusercontent.com/srobb1/pfb2017/master/files/sequences.nt.fa"
+  114  sort -g sorted.cuffdiff.out | head -100 > top100.sorted.cuffdiff.out
+  161  echo "# PFB2017" >> README.md
+  162  git init
+  163  git add README.md
+  164  git commit -m "first commit"
+  165  git remote add origin https://github.com/webbshasta/PFB2017.git
+  166  git push -u origin master
+  167  git remote add
+  168  ls
+  169  mv problemsets/ Webb_PFB2017/
+  170  git remote add Webb_PFB2017/ https://github.com/webbshasta/PFB2017
+  171  git remote add Webb_PFB2017 https://github.com/webbshasta/PFB2017
+  172  ls
+  173  mv README.md Webb_PFB2017/
+  174  ls
+  175  cd Webb_PFB2017/
+  176  ls
+  177  vi git_exercises.txt
+  178  git add git_exercises.txt 
+  179  git commit -m 'message'
+  180  git push -u Webb_PFB2017 PFB2017
+  181  git push -u PFB2017 master
+  182  git push -u origin master
+  183  git add *
+  184  git commmit -m 'adding all files from problemsets to repo'
+  185  git commit -m 'adding all files from problemsets to repo'
+  186  git push
+  187  ssh-keygen -t rsa -b 4096 -C "webbshasta@gmail.com"
+  188  ls - al ~/.ssh
+  189  ls -al ~/.ssh
+  190  eval "$(ssh-agent -s)"
+  191  ssh-add -K ~/.ssh/id_rsa
+  192  pbcopy < ~/.ssh/id_rsa.pub
+  193  cd problemsets/
+  194  mkdir files
+  195  ls
+  196  cd Unix_1/
+  197  mv sequences.nt.fa cancer_genes.fasta
+  198  ls
+  199  cd ..
+  200  mv Unix_1/cancer_genes.fasta files/
+  201  ls 
+  202  cd files/
+  203  ls
+  204  cd ..
+  205  cd files/
+  206  git add cancer_genes.fasta 
+  207  git commit -m 'adding cancer_genes.fasta'
+  208  git push
+  209  vi mysequences.txt
+  210  vi mysequences.txt
+  211  git add mysequences.txt 
+  212  git commit -m 'adding mysequences.txt'
+  213  git push
+  214  clear
+  215  mkdir fastas
+  216  cp cancer_genes.fasta fastas/
+  217  ls
+  218  cd fastas/
+  219  ls
+  220  cd ..
+  221  rm cancer_genes.fasta 
+  222  ls
+  223  cd fastas/
+  224  ls
+  225  cd ..
+  226  cd ..
+  227  cd ..
+  228  git add all *
+  229  git add *
+  230  git commit -m 'adding all files to repo'
+  231  git push
+  232  history > unixBasics.history.txt
