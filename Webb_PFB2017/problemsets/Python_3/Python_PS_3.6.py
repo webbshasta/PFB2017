@@ -10,12 +10,21 @@ dna = dna_raw.strip()
 ga_count = dna.count('GAATTC')
 ga_first = dna.find('GAATTC')
 
-print("Number of restriction sites:", ga_count, "\nStart position of EcoRI:",  ga_first)
+#print("Number of restriction sites:", ga_count, "\nStart position of EcoRI:",  ga_first)
 
 len_fragment_1 = len(dna[0:ga_first+1])
 len_fragment_2 = len(dna[ga_first+1:])
 
-print(len_fragment_1, len_fragment_2)
+#print(len_fragment_1, len_fragment_2)
 
-#print(dna[0:ga_first])
-#print(dna[ga_first:]) 
+fragment_1 = (dna[0:ga_first])
+fragment_2 = (dna[ga_first:])
+
+position_1 = dna.find(fragment_1)
+position_2 = dna.find(fragment_2) 
+
+print(fragment_1, "\t", position_1, "\t", len_fragment_1)
+print(fragment_2, "\t", position_2, "\t", len_fragment_2)
+
+
+
