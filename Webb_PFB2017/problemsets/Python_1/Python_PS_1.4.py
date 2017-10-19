@@ -2,7 +2,7 @@
 
 import sys
 
-name = sys.argv[1]
+name = sys.argv[1] 
 fav_color = sys.argv[2]
 fav_activity = sys.argv[3]
 fav_animal = sys.argv[4]
